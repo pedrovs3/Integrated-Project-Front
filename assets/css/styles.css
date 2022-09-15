@@ -1,0 +1,19 @@
+@import url('./includes/components/header.css');
+@import url('./includes/reset.css');
+@import url('./includes/variables.css');
+@import url('./includes/components/main.css');
+@import url('./includes/components/footer.css');
+@import url('./includes/card.css');
+
+.text-bold{
+  color: var(--main-color);
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+}
+
+.text-bold:hover{
+  color: #7286ec;
+  text-shadow: -5px 5px 0px #4338dfe5,
+                 -10px 10px 0px #4338df8e,
+                 -15px 15px 0px #4338df41;
+}

@@ -1,0 +1,52 @@
+.rodape{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 95px;
+  color: var(--white-text);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--main-color);
+  height: 140px;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.telefone, .email, .endereco {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-container{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons-container{
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 45px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease-in-out;
+}
+
+.icons-container:hover{
+  border-color: var(--main-color-20);
+  box-shadow: rgba(0, 0, 0, 0.15) 0.15rem 0.15rem 0.2rem;
+  transform: translateX(-0.0938rem) translateY(0.125rem);
+  background-color: var(--main-color-80);
+}

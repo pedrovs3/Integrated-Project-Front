@@ -1,0 +1,52 @@
+.cabecalho {
+  height: 6.25rem;
+  padding: 0 5.9375rem;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-div {
+  display: flex;
+  gap: 0.625rem;
+  align-items: top;
+  justify-content: center;
+}
+
+.logo-div img {
+  max-height: 3.75rem;
+}
+
+.logo-div span {
+  font-size: 1.5rem;
+  max-width: 4.68rem;
+  max-height: 3.5rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--white-text);
+}
+
+.cabecalho .exit-link {
+  display: flex;
+  padding: 0rem 0.625rem;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-text);
+  font-size: 2.25rem;
+  transition: all 300ms ease-in-out;
+}
+
+.exit-link span {
+  padding-bottom: 0.8125rem;
+}
+
+.exit-link:hover{
+  border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0.15rem 0.15rem 0.2rem;
+  transform: translateX(-0.0938rem) translateY(0.125rem);
+  background-color: var(--main-color-80);
+}
