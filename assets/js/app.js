@@ -1,6 +1,8 @@
 'use strict';
 
-const fetchAPI = async () => {
+import criaCard from "./components/cardsHome.js";
+
+const fetchAPIFirstPage = async () => {
   const url = 'http://localhost:3000/cursos';
   const response = await fetch(url);
 
@@ -10,7 +12,7 @@ const fetchAPI = async () => {
 };
 
 const separateData = async () => {
-  const data = await fetchAPI();
+  const data = await fetchAPIFirstPage();
   const array = new Array();
 
   data.forEach(elemento => {
@@ -23,24 +25,34 @@ const separateData = async () => {
   return array;
 };
 
+const data = await separateData();
 
 const divPai = document.querySelector('.cursos');
 
-const criaCard = async () => {
-  const arrayCursos = await separateData()
+criaCard(divPai, data);
 
-  arrayCursos.forEach(elemento => {
-    const card = document.createElement('div');
-    const img = document.createElement('img');
-    const span = document.createElement('span');
-    img.src = elemento.icone
-    card.classList.add('curso-card');
-    span.textContent = elemento.sigla
+// const criaCard = async () => {
+//   const arrayCursos = await separateData()
 
-    card.appendChild(img)
-    card.appendChild(span)
-    divPai.appendChild(card);
-  });
-}
+//   arrayCursos.forEach(elemento => {
+//     const card = document.createElement('div');
+//     const img = document.createElement('img');
+//     const span = document.createElement('span');
+//     img.src = elemento.icone
+//     card.classList.add('curso-card');
+//     span.textContent = elemento.sigla
 
-criaCard()
+//     card.appendChild(img)
+//     card.appendChild(span)
+//     divPai.appendChild(card);
+//     document.addEventListener('click', handler)
+//   });
+
+  
+// };
+
+
+// criaCard()
+
+export default separateData
+

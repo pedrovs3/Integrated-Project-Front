@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lion School</title>
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/alunos.js" defer type="module"></script>
+  <script src="https://kit.fontawesome.com/e2a54895da.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="logo-div">
+      <img src="../img/logo-image.png" alt="Logo Lion School">
+    <span>Lion School</span>
+    </div>
+    <a href="#" class="exit-link">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      <span>sair</span>
+    </a>
+  </header>
+  <div class="submenu-filters">
+    <select name="status" id="statusSelect">
+      <option selected>Status</option>
+      <option value="finalizado">Finalizado</option>
+      <option value="cursando">Cursando</option>
+    </select>
+
+    <div class="legenda">
+      <ul>
+        <li>
+          <div class="box-color"></div>
+          <label>Finalizado</label>
+        </li>
+        <li>
+          <div class="box-color"></div>
+          <label>Cursando</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <main>
+    <div class="main-container">
+      <h1 id="curso-title"></h1>
+      <div class="alunos-grid"></div>
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="contatos">
+
+      <div class="telefone">
+        <i class="fa-solid fa-phone"></i>
+        <span>(11) 4774-4700</span>
+      </div>
+
+      <div class="email">
+        <i class="fa-solid fa-envelope"></i>
+        <span>lionschool@gmail.com</span>
+      </div>
+
+      <div class="endereco">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Rua tcc, 211,  Centro, Jandira</span>
+      </div>
+    </div>
+    
+    <span class="copyright">Copyright © 2022 | Pedro Vieira</span>
+
+    <div class="social-container">
+      <div class="icons-container">
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="icons-container">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="icons-container">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="icons-container">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

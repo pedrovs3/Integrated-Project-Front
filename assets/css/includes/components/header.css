@@ -50,3 +50,44 @@
   transform: translateX(-0.0938rem) translateY(0.125rem);
   background-color: var(--main-color-80);
 }
+
+.submenu-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 95px;
+  background-color: var(--main-color-20);
+}
+
+.submenu-filters select {
+  border-radius: 0.75rem;
+  padding: 5px 10px;
+  background-color: var(--main-color-20);
+}
+
+.legenda ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.legenda ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.legenda ul li:nth-child(1) .box-color, .legenda .box-color {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  background-color: var(--main-color);
+}
+
+.legenda .box-color {
+  background-color: var(--cursando-color);
+}

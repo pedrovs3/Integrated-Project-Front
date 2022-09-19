@@ -11,6 +11,10 @@
   height: 140px;
 }
 
+.copyright{
+  font-size: 20px;
+}
+
 .contatos {
   display: flex;
   flex-direction: column;

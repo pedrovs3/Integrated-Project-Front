@@ -4,6 +4,7 @@
 @import url('./includes/components/main.css');
 @import url('./includes/components/footer.css');
 @import url('./includes/card.css');
+@import url('./includes/components/alunoCard.css');
 
 .text-bold{
   color: var(--main-color);
