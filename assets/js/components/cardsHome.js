@@ -27,7 +27,7 @@ const handler = (e) => {
   if (siglas.includes(e.target.textContent || e.target.parentElement.textContent)) {
     const textContent = e.target.textContent || e.target.parentElement.textContent;
     localStorage.setItem('idCurso', textContent)
-    location.href = '/assets/views/alunos.html'  
+    location.href = './assets/views/alunos.html'  
   }
 }
 

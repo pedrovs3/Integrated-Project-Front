@@ -18,9 +18,8 @@ title.textContent = cursoTitle;
 const filterByStatus = async () => {
   const statusSelected = status.value;
   const year = yearFilter.value;
-  
+
   const dataPorStatus = await fetchStatus(idCurso, statusSelected, year);
-  console.log(yearFilter.value)
 
   cleanDiv();
   criaAluno(dataPorStatus);
@@ -67,7 +66,7 @@ const cleanDiv = () => {
 const viewRelatorio = async (e) => {
   const idAluno = e.target.id || e.target.parentElement.id;
   localStorage.setItem('idAluno', idAluno);
-  location.href = '/assets/views/relatorio.html';
+  location.href = './relatorio.html';
 };
 
 const yearsStudents = () => {

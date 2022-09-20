@@ -5,7 +5,6 @@ const relatorioAluno = await fetchRelatorio(idAluno);
 const divPai = document.querySelector('.flex-container-main');
 const divStatus = document.querySelector('.stats-container');
 const disciplinas = relatorioAluno.curso[0].disciplinas;
-console.log(relatorioAluno, disciplinas);
 
 const insertStudent = () => {
   const divPerson = document.createElement('div');
