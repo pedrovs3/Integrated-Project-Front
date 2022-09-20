@@ -8,11 +8,11 @@
   font-size: 16px;
   font-weight: 400;
   background-color: var(--main-color);
-  height: 140px;
+  height: 120px;
 }
 
 .copyright{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .contatos {
@@ -41,6 +41,7 @@
   border-radius: 50%;
   border: 1px solid #fff;
   width: 45px;
+  height: 45px;
   padding: 10px 0px;
   display: flex;
   align-items: center;

@@ -1,6 +1,8 @@
 .aluno-card {
   height: 300px;
   width: 200px;
+  padding: 10px 20px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,10 +11,25 @@
   text-align: center;
   color: var(--white-text);
   background-color: var(--main-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 12px;
+  transition: all 200ms ease-in-out;
+}
+
+.aluno-card:hover {
+  transform: scale(1.1);
+}
+
+.formado {
+  background-color: var(--main-color);
+}
+
+.cursando {
+  background-color: var(--cursando-color);
 }
 
 .aluno-card img {
+  filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
   width: 200px;
   height: 200px;
 }

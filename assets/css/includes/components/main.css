@@ -52,6 +52,8 @@ main {
 
 .alunos-grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
