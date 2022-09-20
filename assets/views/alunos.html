@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lion School</title>
-
+  
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/alunos.js" defer type="module"></script>
   <script src="https://kit.fontawesome.com/e2a54895da.js" crossorigin="anonymous"></script>
@@ -18,18 +19,24 @@
       <img src="../img/logo-image.png" alt="Logo Lion School">
     <span>Lion School</span>
     </div>
-    <a href="#" class="exit-link">
+    <a onclick="window.history.back();" class="exit-link">
       <i class="fa-solid fa-arrow-right-from-bracket"></i>
       <span>sair</span>
     </a>
   </header>
   <div class="submenu-filters">
-    <select name="status" id="statusSelect">
-      <option selected>Status</option>
-      <option value="finalizado">Finalizado</option>
-      <option value="cursando">Cursando</option>
-    </select>
-
+    <div class="filters">
+      <select name="status" id="statusSelect">
+        <option selected>Status</option>
+        <option value="finalizado">Finalizado</option>
+        <option value="cursando">Cursando</option>
+      </select>
+  
+      <select name="years" id="yearsFilter">
+        <option selected>Ano</option>
+      </select>
+    </div>
+    
     <div class="legenda">
       <ul>
         <li>
