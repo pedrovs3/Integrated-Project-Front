@@ -1,0 +1,36 @@
+@media (max-width:800px) {
+  .flex-main {
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-main .studant-image {
+    display: none;
+  }
+
+  .contatos{
+    display: none;
+  }
+
+  .rodape{
+    align-items: center;
+    padding-top: 15px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .alunos-grid {
+    gap: 50px;
+  }
+
+  .flex-container-main {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .notas-container {
+    flex-wrap: wrap;
+  }
+}

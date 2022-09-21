@@ -5,7 +5,8 @@
 @import url('./includes/components/footer.css');
 @import url('./includes/card.css');
 @import url('./includes/components/alunoCard.css');
-@import url('./includes/animate-svg.css');
+@import url('./includes/animations.css');
+@import url('./responsivity.css');
 
 .text-bold{
   color: var(--main-color);

@@ -1,4 +1,3 @@
-import openNewUrl from '../fetchAlunos.js'
 let separate = [];
 
 const criaCard = (divPai, separateData) => {

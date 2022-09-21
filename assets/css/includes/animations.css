@@ -7,6 +7,21 @@ main {
   animation: suave 0.5s ease-in-out; 
 }
 
+.nota-range::-webkit-progress-value {
+  animation: enchendo 1s ease-in-out forwards!important;
+}
+
+@keyframes enchendo {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @keyframes suave {
   0% {
     transform: scale(0.5);

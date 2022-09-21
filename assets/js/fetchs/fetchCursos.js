@@ -1,6 +1,6 @@
 'use strict';
-import separateData from "./utils/cleanResponse.js";
-import criaCard from "./components/cardsHome.js";
+import separateData from "../utils/cleanResponse.js";
+import criaCard from "../components/cardsHome.js";
 
 const fetchAPIFirstPage = async () => {
   const url = 'http://localhost:3000/cursos';
@@ -8,7 +8,7 @@ const fetchAPIFirstPage = async () => {
 
   const data = await response.json();
 
-  return data;
+  return data.cursos;
 };
 
 separateData(await fetchAPIFirstPage());

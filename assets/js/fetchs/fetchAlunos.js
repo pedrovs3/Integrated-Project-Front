@@ -4,7 +4,7 @@ const openNewUrl = async (textContent) => {
   const url = `http://localhost:3000/alunos/${curso}`
   const response = await fetch(url)
   const data = await response.json()
-  return data
+  return data.alunos
 }
 
 export default openNewUrl;

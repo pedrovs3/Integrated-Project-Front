@@ -5,7 +5,7 @@ const fetchStatus = async (curso, status, year) => {
   const response = await fetch(url)
   const data = await response.json()
 
-  return data;
+  return data.alunosByStatus || data.studentsFilter || data.alunos;
 }
 
 const fetchYear = async (curso, status, year) => {
@@ -14,7 +14,7 @@ const fetchYear = async (curso, status, year) => {
 
   const response = await fetch(url)
   const data = await response.json()
-  return data;
+  return data.alunosByYear || data.studentsFilter || data.alunos;
 }
 
 export {fetchStatus, fetchYear};

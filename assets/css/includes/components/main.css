@@ -124,6 +124,11 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  transition: all 300ms ease-in-out;
+}
+
+.nota:hover {
+  transform: scale(1.1);
 }
 
 .nota-range {

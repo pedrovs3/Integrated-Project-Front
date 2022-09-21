@@ -14,9 +14,11 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 12px;
   transition: all 200ms ease-in-out;
+  text-transform: capitalize;
 }
 
 .aluno-card:hover {
+  cursor: pointer;
   transform: scale(1.1);
 }
 

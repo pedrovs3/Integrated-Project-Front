@@ -6,6 +6,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  box-shadow: var(--box-shadow);
 }
 
 .logo-div {
@@ -60,9 +61,16 @@
   animation: submenu-animation 0.7s ease-in-out;
 }
 
+.filters{
+  display: flex;
+  gap: 20px;
+}
+
 .submenu-filters select {
-  border-radius: 0.75rem;
-  padding: 5px 10px;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  padding: 10px 20px;
   background-color: var(--main-color-20);
   animation: filters-animation 2s ease-in-out;
 }
