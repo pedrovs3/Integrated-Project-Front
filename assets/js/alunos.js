@@ -50,7 +50,7 @@ const criaAluno = (data) => {
 
     a.setAttribute('id', aluno.matricula);
 
-    img.src = aluno.foto;
+    img.setAttribute('src', aluno.foto) // Teste de atribuiçao do src para funcionar no github 
     span.classList.add('name');
     span.textContent = aluno.nome;
     a.appendChild(img);
