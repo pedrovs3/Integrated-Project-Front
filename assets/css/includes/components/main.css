@@ -62,7 +62,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
 }

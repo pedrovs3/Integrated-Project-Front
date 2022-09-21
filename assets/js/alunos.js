@@ -37,7 +37,6 @@ const filterByYear = async () => {
 }
 
 const viewRelatorio = async (e) => {
-  console.log(e.target.id || e.target.parentElement.id)
   const idAluno = e.target.id || e.target.parentElement.id;
   localStorage.setItem('idAluno', idAluno);
   location.href = './relatorio.html';

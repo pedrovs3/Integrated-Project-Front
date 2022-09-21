@@ -31,7 +31,7 @@ const insertStatus = (disciplinas, divToAppend) => {
       notaRange.classList.add('exame')
     }
 
-    notaRange.setAttribute('value', disciplina.media);
+    setTimeout(() => notaRange.setAttribute('value', disciplina.media), 10)
     notaRange.setAttribute('min', 0)
     notaRange.setAttribute('max', 100)
 
