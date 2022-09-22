@@ -29,11 +29,16 @@ const filterByStatus = async () => {
 const filterByYear = async () => {
   const ano = yearFilter.value;
   const statusSelected = status.value;
-  if (ano !== 'Ano') {
-    const dataAnoStatus = await fetchYear(idCurso, statusSelected, ano)
+
+  if(statusSelected == 'Status' && ano == 'Ano') {
     cleanDiv(divPai)
-    criaAluno(dataAnoStatus);
+    criaAluno(dataAlunos);
+    return;
   }
+
+  const dataAnoStatus = await fetchYear(idCurso, statusSelected, ano)
+  cleanDiv(divPai);
+  criaAluno(dataAnoStatus);
 }
 
 const viewRelatorio = async (e) => {
@@ -67,6 +72,7 @@ const insertFilterYears = (anos) => {
 
 insertFilterYears(anos);
 divPai.addEventListener('click', viewRelatorio);
+
 status.addEventListener('change', filterByStatus);
 yearFilter.addEventListener('change', filterByYear)
 
