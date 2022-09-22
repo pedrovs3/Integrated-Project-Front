@@ -3,7 +3,7 @@ import separateData from "../utils/cleanResponse.js";
 import criaCard from "../components/cardsHome.js";
 
 const fetchAPIFirstPage = async () => {
-  const url = 'http://localhost:3000/cursos';
+  const url = 'https://integrated-api.netlify.app/.netlify/functions/api/cursos';
   const response = await fetch(url);
 
   const data = await response.json();
