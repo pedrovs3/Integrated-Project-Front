@@ -105,13 +105,14 @@
 
 @keyframes submenu-animation {
   0%{
-    z-index: -1;
     transform: translateY(-40px);
+    filter: opacity(0);
     padding: 0px 95px;
     margin-bottom: 10px;
   }
 
   100%{
+    filter: opacity(1);
     transform: translateY(0px);
     padding: 10px 95px;
     margin-bottom: 0px;

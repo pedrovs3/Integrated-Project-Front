@@ -107,7 +107,7 @@ main {
 }
 
 .stats-container .notas-container {
-  min-width: 31.25rem;
+  min-width: 21.25rem;
   list-style: none;
   gap: 1.875rem;
   display: flex;

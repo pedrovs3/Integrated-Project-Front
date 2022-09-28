@@ -1,3 +1,42 @@
+.menu-burger-container{
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.menu-burger, .menu-burger::before, .menu-burger::after{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 48px;
+  background-color: #f5f5f5;
+  transition: all 500ms ease-in-out;
+  z-index: 100;
+}
+
+.menu-burger::before{
+  transform: translateY(-12px);
+}
+
+.menu-burger::after{
+  transform: translateY(12px);
+}
+
+.menu-burger-container.show .menu-burger{
+  background-color: transparent;
+}
+
+.menu-burger-container.show .menu-burger::before{
+  transform: rotate(45deg);
+}
+
+.menu-burger-container.show .menu-burger::after{
+  transform: rotate(-45deg);
+}
+
 @media (max-width:800px) {
   main{
     padding: 10px 20px;
@@ -14,36 +53,19 @@
     display: none;
   }
   
-  .menu-burguer{
-    display: flex!important;
-    align-items: center;
-    justify-content: center;
+  .menu-burger-container{
+    display:flex;
   }
 
-  .menu-burguer .line{
-    width: 100%;
-    height: 2px;
-    background-color: azure;
+  .submenu-filters{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
   }
 
-  .menu-burguer .line::before{
-    content: '';
-    display: block;
-    position: relative;
-    margin-top: 15px ;
-    width: 100%;
-    height: 2px;
-    background-color: aliceblue;
-  }
-  
-  .menu-burguer .line::after{
-    content: '';
-    display: block;
-    position: relative;
-    margin-top: 10px ;
-    width: 100%;
-    height: 2px;
-    background-color: aliceblue;
+  .submenu-filters.open {
+    display: flex;
   }
 
   .flex-main {
@@ -92,14 +114,29 @@
     flex-wrap: wrap;
   }
 
-  .submenu-filters{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
-
   .main-container{
     padding: 30px 0px;
+    transition: all 500ms ease-in-out;
+  }
+
+  .person {
+    height: 21.25rem;
+    width: 21.25rem;
+  }
+
+  .student-photo {
+    height: 20rem;
+    width: 15rem;
+  }
+
+  .stats-container{
+    width: 100%;
+    min-width: auto;
+    padding: 10px 20px;
+  }
+
+  .stats-container .notas-container {
+    gap: 1.2rem;
+    min-width: auto;
   }
 }
