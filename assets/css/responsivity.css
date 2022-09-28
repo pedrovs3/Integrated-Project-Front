@@ -39,7 +39,7 @@
 
 @media (max-width:800px) {
   main{
-    padding: 50px 20px;
+    padding: 50px 30px;
   }
 
   .cabecalho{
@@ -102,6 +102,10 @@
 
   .alunos-grid {
     gap: 50px;
+  }
+
+  .aluno-card {
+    width: 100%;
   }
 
   .flex-container-main {
